@@ -114,7 +114,7 @@ saveGraph = function(file = "saveGraphOutput", type = "pdf", ...) {
     stop("Unsupported file type for RStudio: ", type)
   }
   
-  # 非 RStudio 情况（Mac, Linux, Windows）
+  # Non-RStudio cases (Mac, Linux, Windows)
   if (.Platform$OS.type == "windows") {
     savePlot(file = file, type = type, ...)
   } else {

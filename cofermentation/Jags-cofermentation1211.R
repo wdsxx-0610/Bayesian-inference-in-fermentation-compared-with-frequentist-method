@@ -195,12 +195,12 @@ write.csv(output, outCSV)
 mcmc=as.matrix(mcmcCoda)
 newTime = as.array(x = c(min(rawData$time,na.rm=TRUE), max(rawData$time,na.rm=TRUE)))
 # effect size
-# ... (newTime 定义保持不变) ...
-fit = matrix(NA, nrow(mcmc), length(newTime)) # 修正 ncol 定义
+# ... (newTime definition remains unchanged) ...
+fit = matrix(NA, nrow(mcmc), length(newTime)) # Fix ncol definition
 
 for (k in 1:nrow(mcmc)){
   p <- mcmc[k,]
-  # 统一公式
+  # Unified formula
   fit[k,] = p["Amax"] / (exp(-p["a"]*(newTime - p["c"])) + 
                            exp( p["b"]*(newTime - p["c"])))
 
