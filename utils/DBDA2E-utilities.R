@@ -86,9 +86,9 @@ openGraph = function( width=7 , height=7 , mag=1.0 , ... ) {
 # }
 
 saveGraph = function(file = "saveGraphOutput", type = "pdf", ...) {
-  file <- paste0(file, ".", type)  # 统一文件名格式
+  file <- paste0(file, ".", type)  # Standardize file name format
   
-  # 兼容 RStudio
+  # RStudio compatibility
   if (capabilities("png") && (dev.cur() == 1 || names(dev.cur()) == "RStudioGD")) {
     message("RStudio detected, using dev.copy() instead of savePlot()")
     

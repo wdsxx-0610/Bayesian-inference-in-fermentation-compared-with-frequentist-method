@@ -1,7 +1,12 @@
 # ==============================================================================
 # Task: Extract priors from Test A data (adapted for multi-file structure)
 # ==============================================================================
-install.packages("ggmcmc")
+
+# Install ggmcmc if not already installed
+if (!require("ggmcmc", quietly = TRUE)) {
+  install.packages("ggmcmc")
+}
+
 graphics.off()
 rm(list=ls())
 

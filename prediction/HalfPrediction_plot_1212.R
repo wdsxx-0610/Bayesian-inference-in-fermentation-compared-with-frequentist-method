@@ -181,15 +181,15 @@ if (length(valid_plots) == 4) {
   final_plot <- plot_grid(
     main_plot,
     legend_plot,
-    ncol = 1, rel_heights = c(1, 0.08) # 调整底部图例高度
+    ncol = 1, rel_heights = c(1, 0.08) # Adjust bottom legend height
   )
   
-  # 保存
+  # Save
   save_path <- file.path(result_dir, "Figure5_Prediction_Comparison.png")
   ggsave(save_path, final_plot, width = 12, height = 12, type = "cairo",dpi = 1000)
   
-  print(paste("可视化完成！文件已保存至:", save_path))
-  print(final_plot) # 在 RStudio 中显示
+  print(paste("Visualization complete! File saved to:", save_path))
+  print(final_plot) # Display in RStudio
 } else {
-  warning("未能生成所有代谢物的图，请检查是否有部分代谢物预测失败。")
+  warning("Failed to generate all metabolite plots, please check if some metabolite predictions failed.")
 }

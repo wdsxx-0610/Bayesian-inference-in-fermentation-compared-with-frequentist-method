@@ -312,20 +312,19 @@ if (file.exists(data_path)) {
 # Options: "Lactate", "Acetate", "Ethanol", "PDO"
 # ==========================================================
 
-target_metabolite <- "Lactate"   # <--- Modify here! For example, change to "Acetate"
-target_metabolite <- "Acetate"  
-target_metabolite <- "Ethanol"  
-target_metabolite <- "PDO"  
-# 5.3 运行逻辑
+# Select which metabolite to analyze (modify this line):
+target_metabolite <- "PDO"   # <--- Modify here! Options: "Lactate", "Acetate", "Ethanol", "PDO"
+
+# 5.3 Run logic
 if (target_metabolite %in% colnames(df)) {
   
-  # 运行单个
+  # Run single metabolite
   result <- fit_metabolite(df, target_metabolite)
   
-  # 显示结果
+  # Display results
   print(as.data.frame(result))
   
-  # 保存单个结果指标
+  # Save single result metrics
   metrics_file <- file.path(save_dir, paste0(target_metabolite, "_metrics.csv"))
   write_csv(as.data.frame(result), metrics_file)
   cat(paste("\nMetrics saved to:", metrics_file, "\n"))
