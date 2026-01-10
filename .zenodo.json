@@ -1,0 +1,32 @@
+{
+  "title": "Bayesian Inference in Fermentation Compared with Frequentist Method",
+  "description": "Application of Bayesian inference to fermentation kinetic modeling, focusing on glycerol-glucose co-fermentation for 1,3-propanediol production and dark fermentation for biohydrogen production.",
+  "license": "MIT",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Wang, Dashuai",
+      "affiliation": "",
+      "orcid": ""
+    }
+  ],
+  "keywords": [
+    "Bayesian inference",
+    "fermentation kinetics",
+    "JAGS",
+    "statistical modeling",
+    "1,3-propanediol",
+    "biohydrogen",
+    "co-fermentation",
+    "MCMC",
+    "R"
+  ],
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "scheme": "url",
+      "identifier": "https://github.com/wdsxx-0610/Bayesian-inference-in-fermentation-compared-with-frequentist-method",
+      "relation": "isSupplementTo"
+    }
+  ]
+}
