@@ -1,13 +1,14 @@
 # Bayesian-inference-in-fermentation-compared-with-frequentist-method
 
 This study explores the application of Bayesian inference to fermentation kinetic modeling, focusing on two representative batch systems: glycerol-glucose co-fermentation for 1,3-propanediol (1,3-PDO) production and dark fermentation for biohydrogen production.
+DOI:
 
 **BibTeX:**
 
 ```bibtex
-@misc{YourLastName2025,
+@misc{Xiang 2025,
   title  = {Bayesian Inference on fermentation kinetics: Comparative analysis with frequentist approach},
-  author = {Anonymous Authors},
+  author = {Xiang Li and Yen-Han Lin},
   year   = {2025},
   note   = {Submitted to Bioresource Technology / Under Review}
 }
