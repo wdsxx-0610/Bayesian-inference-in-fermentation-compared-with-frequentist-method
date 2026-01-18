@@ -1,4 +1,4 @@
-# Bayesian-inference-in-fermentation-compared-with-frequentist-method
+# Bayesian inference on fermentation kinetics compared with frequentist approach
 
 Xiang Li, Yen-Han Lin,
 Bayesian inference on fermentation kinetics: Comparative analysis with frequentist approach,
